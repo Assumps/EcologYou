@@ -1,0 +1,161 @@
+.contentContainer {
+    max-width: 1120px;
+    margin:0 auto;
+    padding: 0 2rem;
+    height: calc(100vh - 5rem);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero {
+    max-width: 600px;
+
+    > span {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    h1{
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        font-weight: 900;
+        margin-top: 2.5rem;
+
+        span{
+            color: var(--green-500);
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        margin-top: 1.5rem;
+
+        span {
+            color: var(--green-500);
+            font-weight: bold;
+        }
+    }   
+
+}
+
+.contentBeneficios {
+    max-width: 1120px;
+    margin:0 auto;
+    padding: 0 2rem;
+    height: calc(30vh - 5rem);
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.beneficios {
+    max-width: 1200px;
+
+
+    h1{
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        font-weight: 900;
+        margin-top: 0.5rem;
+
+    } 
+
+}
+
+.card {
+    background: linear-gradient(
+      180deg,
+      var(--card-color) 80%,
+      var(--card-colorbas)
+    );
+    position: relative;
+    padding-top: calc(var(--card-witdh) / 20);
+    padding-right: calc(var(--card-witdh) / 10);
+    padding-bottom: calc(var(--card-witdh) / 2);
+    padding-left: calc(var(--card-witdh) / 10);
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    border-radius: 5px 5px 0px 0px;
+    width: var(--card-witdh);
+    float: left;
+    margin: 90px 0 0 100px ;
+    
+
+    
+  }
+  
+  .card:nth-child(1)::after {
+    filter: url(#noise);
+    content: "";
+    background-image: url(https://calleberg.com/develop/stone.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 340px;
+    height: var(--card-witdh);
+    display: flex;
+    position: absolute;
+    left: calc(-0.25 * var(--card-witdh));
+    bottom: calc(-0.6 * var(--card-witdh));
+    right: calc(-0.25 * var(--card-witdh));
+    z-index: 10;
+  }
+
+  .card:nth-child(2)::after {
+    
+    content: "";
+    background-image: url("../../public/images/undraw_carbon_credit.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: var(--card-witdh);
+    display: flex;
+    position: absolute;
+    left: calc(-0.25 * var(--card-witdh));
+    bottom: calc(-0.5 * var(--card-witdh));
+    right: calc(-0.25 * var(--card-witdh));
+    z-index: 10;
+  }
+
+  .card:nth-child(3)::after {
+    
+    content: "";
+    background-image: url("../../public/images/undraw_exp.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: var(--card-witdh);
+    display: flex;
+    position: absolute;
+    left: calc(-0.25 * var(--card-witdh));
+    bottom: calc(-0.6 * var(--card-witdh));
+    right: calc(-0.25 * var(--card-witdh));
+    z-index: 10;
+  }
+  
+  
+  
+  @media only screen and (max-width: 786px) {
+    .card {
+      width: 90%;
+      background: var(--card-color);
+      margin-bottom: 100px;
+      padding: 10px 10px 40px 10px;
+      border-radius: 5px;
+    }
+  
+    .card::after {
+      width: 200px;
+      height: 150px;
+      bottom: -100px;
+      left: auto;
+      right: 0;
+      z-index: 10;
+    }
+  }
