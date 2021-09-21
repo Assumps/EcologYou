@@ -43,11 +43,7 @@ export default function Home() {
       </section>
       
       </main>
-      <main className={styles.contentContainer}>
-        <footer>
-          <h1>footer</h1>
-        </footer>
-      </main>
+
     </>
   )
 }
