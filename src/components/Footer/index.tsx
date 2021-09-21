@@ -1,4 +1,5 @@
 import styles from './styles.module.scss'
+import Image from 'next/image'
 
 export function Footer() {
 
@@ -13,7 +14,7 @@ export function Footer() {
 		</div>
 		<div className={styles.linkboxes}>
 			<ul className="box">
-            <img src="/images/logo_1.png" alt=""/>
+            <Image width={100} height={60} src="/images/logo_1.png" alt=""/>
 			
 			</ul>
 			<ul className={styles.box}>
@@ -21,11 +22,11 @@ export function Footer() {
 				<li><a href="https://www.linkedin.com/in/mesquini/">Victor Mesquini</a></li>
 				<li><a href="https://www.linkedin.com/in/victorrodrigues99/">Vitor Rodrigues</a></li>
 				<li><a href="https://www.linkedin.com/in/thiago-melo-b45344187/">Thiago Melo</a></li>
-				<li><a href="https://www.linkedin.com/in/joao-assumps/">Joao Assumpcao</a></li>
+				<li><a href="https://www.linkedin.com/in/joao-assumps/">João Assumpção</a></li>
 			
 			</ul>
 	<ul className={styles.box}>
-				<li className="link_name">Servicos EcologYou</li>
+				<li className="link_name">Serviços EcologYou</li>
 				<li><a href="#">Em Breve</a></li>
 				<li><a href="#">Em Breve</a></li>
 				<li><a href="#">Em Breve</a></li>
