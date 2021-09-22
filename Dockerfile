@@ -1,10 +1,10 @@
-FROM node:16.9.1:alpine
+FROM node:alpine
 
 WORKDIR /web
 
 ADD package.json .
 
-RUN npm run i
+RUN npm install
 
 ADD . .
 
